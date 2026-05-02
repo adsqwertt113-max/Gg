@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Controller</title>
+</head>
+<body style="text-align: center; padding-top: 50px;">
+    <button id="flashBtn" style="width: 200px; height: 100px; font-size: 20px;">اضغط للوميض</button>
+
+    <script>
+        document.getElementById('flashBtn').onclick = function() {
+            // هنا نرسل طلب للخدمة لتبلغ الآيباد
+            fetch('https://YOUR_WORKER_URL/send-flash');
+        };
+    </script>
+</body>
+</html>
+
